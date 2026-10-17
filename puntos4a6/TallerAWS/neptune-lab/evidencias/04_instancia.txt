@@ -1,0 +1,11 @@
+------------------------
+|  DescribeDBInstances |
++----------------------+
+|  neptune-lab-writer  |
+|  db.t3.medium        |
+|  neptune             |
+|  1.4.8.0             |
+|  True                |
+|  us-east-1b          |
+|  available           |
++----------------------+

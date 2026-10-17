@@ -1,0 +1,21 @@
+Insertados 12 documentos en lab_tienda.productos
+Total en la coleccion: 12
+Bases de datos: ['lab_tienda']
+Colecciones en lab_tienda: ['productos']
+
+=== BUSQUEDA CON FILTRO: categoria = electronica y precio >= 100 ===
+{"nombre": "Portatil 14 pulgadas", "precio": 1250.0, "stock": 8}
+{"nombre": "Monitor 27 pulgadas", "precio": 310.5, "stock": 15}
+
+=== ORDENACION: stock > 0, precio descendente, top 5 ===
+{"nombre": "Portatil 14 pulgadas", "categoria": "electronica", "precio": 1250.0}
+{"nombre": "Monitor 27 pulgadas", "categoria": "electronica", "precio": 310.5}
+{"nombre": "Silla ergonomica", "categoria": "hogar", "precio": 220.0}
+{"nombre": "Auriculares inalambricos", "categoria": "electronica", "precio": 89.9}
+{"nombre": "Cafetera de goteo", "categoria": "hogar", "precio": 58.2}
+
+=== AGREGACION: resumen por categoria ===
+{"_id": "electronica", "productos": 4, "precio_promedio": 431.1, "unidades": 63, "valor_inventario": 18253.5}
+{"_id": "accesorios", "productos": 2, "precio_promedio": 31.75, "unidades": 230, "valor_inventario": 6375.0}
+{"_id": "hogar", "productos": 3, "precio_promedio": 104.64999999999999, "unidades": 97, "valor_inventario": 6240.0}
+{"_id": "libros", "productos": 3, "precio_promedio": 33.830000000000005, "unidades": 252, "valor_inventario": 4688.7}

@@ -1,0 +1,101 @@
+{
+    "workgroup": {
+        "baseCapacity": 4,
+        "configParameters": [
+            {
+                "parameterKey": "auto_mv",
+                "parameterValue": "true"
+            },
+            {
+                "parameterKey": "datestyle",
+                "parameterValue": "ISO, MDY"
+            },
+            {
+                "parameterKey": "enable_case_sensitive_identifier",
+                "parameterValue": "false"
+            },
+            {
+                "parameterKey": "enable_user_activity_logging",
+                "parameterValue": "true"
+            },
+            {
+                "parameterKey": "query_group",
+                "parameterValue": "default"
+            },
+            {
+                "parameterKey": "require_ssl",
+                "parameterValue": "true"
+            },
+            {
+                "parameterKey": "search_path",
+                "parameterValue": "$user, public"
+            },
+            {
+                "parameterKey": "use_fips_ssl",
+                "parameterValue": "false"
+            },
+            {
+                "parameterKey": "max_query_execution_time",
+                "parameterValue": "14400"
+            }
+        ],
+        "creationDate": "2026-10-10T03:32:29.651000+00:00",
+        "endpoint": {
+            "address": "taller-wg.204309303095.us-east-1.redshift-serverless.amazonaws.com",
+            "port": 5439,
+            "vpcEndpoints": [
+                {
+                    "networkInterfaces": [
+                        {
+                            "availabilityZone": "us-east-1b",
+                            "networkInterfaceId": "eni-069c8883800c299cf",
+                            "privateIpAddress": "172.31.88.68",
+                            "subnetId": "subnet-088f16172ddf8d0f0"
+                        },
+                        {
+                            "availabilityZone": "us-east-1a",
+                            "networkInterfaceId": "eni-06ec3fcb044468a73",
+                            "privateIpAddress": "172.31.5.144",
+                            "subnetId": "subnet-0cdd7c4c7fa8757a6"
+                        },
+                        {
+                            "availabilityZone": "us-east-1c",
+                            "networkInterfaceId": "eni-083ab83f19bd28172",
+                            "privateIpAddress": "172.31.16.83",
+                            "subnetId": "subnet-01d9bd1c3422e15df"
+                        }
+                    ],
+                    "vpcEndpointId": "vpce-04c06d9f562419b66",
+                    "vpcId": "vpc-016d111f72577f3bf"
+                }
+            ]
+        },
+        "enhancedVpcRouting": false,
+        "extraComputeForAutomaticOptimization": false,
+        "ipAddressType": "ipv4",
+        "maxCapacity": 8,
+        "namespaceName": "taller-ns",
+        "patchVersion": "205",
+        "pricePerformanceTarget": {
+            "status": "DISABLED"
+        },
+        "publiclyAccessible": false,
+        "securityGroupIds": [
+            "sg-07866feaa5d0551db"
+        ],
+        "status": "MODIFYING",
+        "subnetIds": [
+            "subnet-01d9bd1c3422e15df",
+            "subnet-088f16172ddf8d0f0",
+            "subnet-0cdd7c4c7fa8757a6",
+            "subnet-0e6e6866e5ff94b32",
+            "subnet-0e2c93f0c0546d14e",
+            "subnet-0d4e954878f408f4c"
+        ],
+        "trackName": "current",
+        "workgroupArn": "arn:aws:redshift-serverless:us-east-1:204309303095:workgroup/59dda667-fa6b-4f3f-adfd-b101a980b57d",
+        "workgroupId": "59dda667-fa6b-4f3f-adfd-b101a980b57d",
+        "workgroupName": "taller-wg",
+        "workgroupVersion": "1.0.477953"
+    }
+}

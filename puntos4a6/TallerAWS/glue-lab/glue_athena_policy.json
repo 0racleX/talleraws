@@ -1,0 +1,12 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {"Effect": "Allow", "Action": ["glue:*", "athena:*"], "Resource": "*"},
+    {"Effect": "Allow",
+     "Action": ["logs:DescribeLogGroups","logs:DescribeLogStreams","logs:GetLogEvents","logs:DeleteLogGroup"],
+     "Resource": "*"},
+    {"Effect": "Allow", "Action": "iam:PassRole",
+     "Resource": "arn:aws:iam::204309303095:role/GlueCrawlerLabRole",
+     "Condition": {"StringEquals": {"iam:PassedToService": "glue.amazonaws.com"}}}
+  ]
+}

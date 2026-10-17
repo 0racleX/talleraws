@@ -1,0 +1,79 @@
+
+--- 1. Subida a S3 ---
+[OK] s3://redshift-lab-204309303095/datos/clientes.csv
+[OK] s3://redshift-lab-204309303095/datos/pedidos.csv
+
+--- 2. Creación de tablas ---
+[OK] DROP pedidos                           id=48f8cc7d-a880-47c4-a5d4-df9eaa83ac06  filas=0  53 ms
+[OK] DROP clientes                          id=318a8994-5518-484f-a815-6f33d9956a85  filas=0  54 ms
+[OK] CREATE clientes                        id=e861248e-33e6-4035-ae6b-77621e1b29a9  filas=0  208 ms
+[OK] CREATE pedidos                         id=ec89fc3c-95a1-49c0-ada1-4a9597b34362  filas=0  182 ms
+[OK] GRANT lectura (Query Editor)           id=8a3939f3-7cca-43f5-8e39-c3b968347ce5  filas=0  139 ms
+
+--- 3. Carga con COPY ---
+[OK] COPY clientes                          id=6913bad4-9013-4adf-9a2b-4041dec8d75e  filas=0  1293 ms
+[OK] COPY pedidos                           id=b4fe12cf-9bda-4a43-b291-5bc18e6a2c43  filas=0  1258 ms
+[OK] COUNT clientes                         id=456f4779-6039-405a-bd20-3f087fe5a053  filas=1  112 ms
+     clientes: 60 filas cargadas
+[OK] COUNT pedidos                          id=f3b5559e-170a-4049-8df4-e484de1444cf  filas=1  37 ms
+     pedidos: 600 filas cargadas
+
+--- 4. Consultas ---
+[OK] Q1_filtro                              id=53156cd0-ba30-45f9-b040-b312ffe36a05  filas=10  307 ms
+
+=== Q1 (FILTRO): pedidos grandes de Electronica en el 2do semestre 2025 ===
+  pedido_id | fecha_pedido | producto | cantidad | precio_unitario | total  
+  ----------+--------------+----------+----------+-----------------+--------
+  15        | 2025-09-02   | Portatil | 5        | 900.00          | 4500.00
+  25        | 2025-11-15   | Portatil | 5        | 900.00          | 4500.00
+  30        | 2026-02-23   | Portatil | 5        | 900.00          | 4500.00
+  41        | 2025-07-09   | Portatil | 5        | 900.00          | 4500.00
+  64        | 2026-02-17   | Portatil | 5        | 900.00          | 4500.00
+  100       | 2026-03-27   | Portatil | 5        | 900.00          | 4500.00
+  107       | 2025-07-21   | Portatil | 5        | 900.00          | 4500.00
+  197       | 2026-03-22   | Portatil | 5        | 900.00          | 4500.00
+  297       | 2026-02-06   | Portatil | 5        | 900.00          | 4500.00
+  338       | 2025-07-22   | Portatil | 5        | 900.00          | 4500.00
+  (10 filas)
+[OK] Q2_union                               id=2fb9233e-394d-4d34-8dae-58fdd0dbe911  filas=10  530 ms
+
+=== Q2 (UNION): ultimos pedidos de clientes colombianos ===
+  nombre        | ciudad   | producto    | fecha_pedido | total  
+  --------------+----------+-------------+--------------+--------
+  Marta Lopez   | Cali     | Libro       | 2026-03-26   | 100.00 
+  Camila Torres | Bogota   | Auriculares | 2026-03-22   | 120.00 
+  Andres Perez  | Bogota   | Telefono    | 2026-03-19   | 500.00 
+  Ana Lopez     | Medellin | Mouse       | 2026-03-18   | 125.00 
+  Juan Lopez    | Cali     | Portatil    | 2026-03-16   | 1800.00
+  Pedro Gomez   | Cali     | Mouse       | 2026-03-12   | 25.00  
+  Luis Vargas   | Medellin | Portatil    | 2026-03-11   | 4500.00
+  Luis Rios     | Cali     | Telefono    | 2026-03-09   | 500.00 
+  Camila Torres | Bogota   | Escritorio  | 2026-03-04   | 880.00 
+  Laura Rios    | Cali     | Cuaderno    | 2026-03-03   | 5.00   
+  (10 filas)
+[OK] Q3_agregacion                          id=15fc22e4-d095-4bbc-82df-52e78adcec93  filas=7  738 ms
+
+=== Q3 (UNION + AGREGACION): ventas por pais y ciudad ===
+  pais     | ciudad           | clientes_con_compras | pedidos | ventas_totales | ticket_promedio
+  ---------+------------------+----------------------+---------+----------------+----------------
+  Colombia | Cali             | 9                    | 100     | 81365.00       | 813.65         
+  Mexico   | Ciudad de Mexico | 10                   | 88      | 77785.00       | 883.92         
+  Colombia | Bogota           | 7                    | 87      | 68445.00       | 786.72         
+  Peru     | Lima             | 9                    | 100     | 56210.00       | 562.10         
+  Chile    | Santiago         | 8                    | 93      | 56155.00       | 603.81         
+  Colombia | Medellin         | 11                   | 89      | 52690.00       | 592.02         
+  Ecuador  | Quito            | 6                    | 43      | 29145.00       | 677.79         
+  (7 filas)
+[OK] Q4_top_clientes                        id=89b42c8e-c851-4dd2-9411-b6f94fb164cf  filas=5  496 ms
+
+=== Q4 (UNION + AGREGACION + HAVING): top 5 clientes por gasto ===
+  cliente_id | nombre        | ciudad           | pedidos | gasto_total
+  -----------+---------------+------------------+---------+------------
+  43         | Pedro Perez   | Ciudad de Mexico | 15      | 21070.00   
+  19         | Luis Rios     | Cali             | 12      | 17910.00   
+  30         | Ana Perez     | Santiago         | 17      | 17730.00   
+  54         | Sofia Mora    | Bogota           | 12      | 17140.00   
+  6          | Camila Vargas | Bogota           | 12      | 15135.00   
+  (5 filas)
+
+Proceso terminado.

@@ -1,0 +1,64 @@
+[OK] Q1 FILTRO: ventas de Electronica con 2+ unidades id=1669dd97-c2e7-4a9c-b0cf-6a1239bba3f2  escaneado=1600 bytes  855 ms
+
+=== Q1 FILTRO: ventas de Electronica con 2+ unidades ===
+  venta_id | fecha_venta | ciudad       | producto  | cantidad | precio_unitario | total  
+  ---------+-------------+--------------+-----------+----------+-----------------+--------
+  2        | 2026-01-12  | Cartagena    | Portatil  | 5        | 899.90          | 4499.50
+  20       | 2026-01-09  | Medellin     | Portatil  | 4        | 899.90          | 3599.60
+  24       | 2026-01-07  | Barranquilla | Portatil  | 3        | 899.90          | 2699.70
+  11       | 2026-01-16  | Cartagena    | Telefono  | 5        | 499.50          | 2497.50
+  13       | 2026-01-26  | Cali         | Telefono  | 2        | 499.50          | 999.00 
+  23       | 2026-01-06  | Barranquilla | Audifonos | 5        | 59.90           | 299.50 
+  19       | 2026-01-20  | Bucaramanga  | Audifonos | 4        | 59.90           | 239.60 
+  (7 filas)
+
+[OK] Q2 AGRUPACION: ingresos por ciudad         id=2732ad74-ad56-4649-87ba-9c2d35966e8e  escaneado=1600 bytes  1142 ms
+
+=== Q2 AGRUPACION: ingresos por ciudad ===
+  ciudad       | ventas | unidades | ingresos | ticket_promedio
+  -------------+--------+----------+----------+----------------
+  Cartagena    | 6      | 16       | 7580.96  | 1263.49        
+  Barranquilla | 4      | 10       | 4398.60  | 1099.65        
+  Medellin     | 6      | 18       | 3832.99  | 638.83         
+  Cali         | 6      | 14       | 3021.40  | 503.57         
+  Bucaramanga  | 1      | 4        | 239.60   | 239.60         
+  Bogota       | 1      | 1        | 149.00   | 149.00         
+  (6 filas)
+
+[OK] Q3 AGRUPACION POR PARTICION: ventas por mes id=07df870b-a2a4-486c-96ee-862725813786  escaneado=1600 bytes  744 ms
+
+=== Q3 AGRUPACION POR PARTICION: ventas por mes ===
+  mes     | ventas | ingresos
+  --------+--------+---------
+  2026-01 | 24     | 19222.55
+  (1 filas)
+
+[OK] Q4 VERIFICACION: codigos postales conservan el cero id=cd5f779f-34e7-45de-9c10-4ae6726e1007  escaneado=1600 bytes  696 ms
+
+=== Q4 VERIFICACION: codigos postales conservan el cero ===
+  ciudad       | codigo_postal
+  -------------+--------------
+  Barranquilla | 080001       
+  Bogota       | 110111       
+  Bucaramanga  | 680001       
+  Cali         | 760001       
+  Cartagena    | 130001       
+  Medellin     | 050001       
+  (6 filas)
+
+[OK] Q5a CON filtro de particion (mes = 2026-01) id=9ea79e70-b82b-469c-943d-c94720eb2296  escaneado=1600 bytes  487 ms
+
+=== Q5a CON filtro de particion (mes = 2026-01) ===
+  filas
+  -----
+  24   
+  (1 filas)
+
+[OK] Q5b SIN filtro de particion                id=ca0cfdf3-57b7-4225-ac5d-bce30577e0e0  escaneado=1600 bytes  933 ms
+
+=== Q5b SIN filtro de particion ===
+  filas
+  -----
+  24   
+  (1 filas)
+

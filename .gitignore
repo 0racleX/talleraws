@@ -1,0 +1,30 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+*.tfvars
+!terraform.tfvars.example
+tfplan
+*.tfplan
+
+# Estado de los scripts
+*_state.env
+*_state.json
+
+# Llaves y credenciales
+*.pem
+*.key
+.env
+.aws/
+credentials
+**/credentials*
+
+# CA publica (se descarga con get_ca_bundle.sh) y zips
+certs/
+*.zip
+
+# Python
+__pycache__/
+.venv/
+*.pyc

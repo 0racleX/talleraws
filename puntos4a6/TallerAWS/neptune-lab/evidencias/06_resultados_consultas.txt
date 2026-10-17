@@ -1,0 +1,40 @@
+
+=== Total de vértices ===
+   {'vertices': 12}
+   (1 filas)
+
+=== Total de relaciones ===
+   {'relaciones': 18}
+   (1 filas)
+
+=== Vértices por etiqueta ===
+   {'etiqueta': ['Company'], 'total': 1}
+   {'etiqueta': ['Person'], 'total': 5}
+   {'etiqueta': ['Project'], 'total': 3}
+   {'etiqueta': ['Skill'], 'total': 3}
+   (4 filas)
+
+=== Relaciones por tipo ===
+   {'tipo': 'WORKS_ON', 'total': 6}
+   {'tipo': 'WORKS_AT', 'total': 5}
+   {'tipo': 'HAS_SKILL', 'total': 5}
+   {'tipo': 'MANAGES', 'total': 2}
+   (4 filas)
+
+=== Q1: compañeros de proyecto de Marta (Persona->Proyecto<-Persona) ===
+   {'companero': 'Luis', 'proyecto': 'Alfa'}
+   {'companero': 'Carlos', 'proyecto': 'Beta'}
+   (2 filas)
+
+=== Q2: habilidades de los subordinados de Ana (MANAGES->HAS_SKILL) ===
+   {'empleado': 'Marta', 'habilidad': 'Spark'}
+   {'empleado': 'Luis', 'habilidad': 'Python'}
+   (2 filas)
+
+=== Q3: proyectos donde trabaja el equipo de Ana (MANAGES->WORKS_ON) ===
+   {'proyecto': 'Alfa', 'equipo_de_ana': ['Luis', 'Marta'], 'personas': 2}
+   {'proyecto': 'Beta', 'equipo_de_ana': ['Marta'], 'personas': 1}
+   (2 filas)
+
+=== Extra Gremlin: proyectos del equipo de Ana ===
+   {"data": {"@type": "g:List", "@value": ["Alfa", "Beta"]}, "meta": {"@type": "g:Map", "@value": []}}

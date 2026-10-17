@@ -1,0 +1,11 @@
+{
+    "usageLimit": {
+        "amount": 10,
+        "breachAction": "deactivate",
+        "period": "daily",
+        "resourceArn": "arn:aws:redshift-serverless:us-east-1:204309303095:workgroup/59dda667-fa6b-4f3f-adfd-b101a980b57d",
+        "usageLimitArn": "arn:aws:redshift-serverless:us-east-1:204309303095:usagelimit/427d7d05-abf7-40ee-ac5f-3c4fe2d351ff",
+        "usageLimitId": "427d7d05-abf7-40ee-ac5f-3c4fe2d351ff",
+        "usageType": "serverless-compute"
+    }
+}

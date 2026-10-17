@@ -1,0 +1,21 @@
+ANTES:
+  venta_id           bigint
+  fecha_venta        string
+  ciudad             string
+  codigo_postal      bigint
+  producto           string
+  categoria          string
+  cantidad           bigint
+  precio_unitario    double
+  cliente_vip        boolean
+DESPUES:
+  venta_id           bigint
+  fecha_venta        date
+  ciudad             string
+  codigo_postal      string
+  producto           string
+  categoria          string
+  cantidad           int
+  precio_unitario    decimal(10,2)
+  cliente_vip        boolean
+Tabla y 1 particion(es) actualizadas.

@@ -1,0 +1,8 @@
+pais,ciudad,clientes_con_compras,pedidos,ventas_totales,ticket_promedio
+Colombia,Cali,9,100,81365.00,813.65
+Mexico,Ciudad de Mexico,10,88,77785.00,883.92
+Colombia,Bogota,7,87,68445.00,786.72
+Peru,Lima,9,100,56210.00,562.10
+Chile,Santiago,8,93,56155.00,603.81
+Colombia,Medellin,11,89,52690.00,592.02
+Ecuador,Quito,6,43,29145.00,677.79

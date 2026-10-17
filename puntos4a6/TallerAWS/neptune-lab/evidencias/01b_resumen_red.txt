@@ -1,0 +1,11 @@
+== VPC ==
+vpc-0573b1f819aaa2844	10.0.0.0/16
+== SUBNETS ==
+subnet-0ab2a94747781c5bc	10.0.2.0/24	us-east-1b
+subnet-01c2bffedad1636d4	10.0.1.0/24	us-east-1a
+subnet-008219cbd6736127d	10.0.3.0/24	us-east-1c
+== IGW ==
+igw-0dfc73f8c761eadf9	vpc-0573b1f819aaa2844	available
+== RUTAS ==
+10.0.0.0/16	local
+0.0.0.0/0	igw-0dfc73f8c761eadf9

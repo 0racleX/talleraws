@@ -1,0 +1,55 @@
+{
+    "DBClusters": [
+        {
+            "AllocatedStorage": 1,
+            "AvailabilityZones": [
+                "us-east-1a",
+                "us-east-1b",
+                "us-east-1c"
+            ],
+            "BackupRetentionPeriod": 1,
+            "DBClusterIdentifier": "neptune-lab",
+            "DBClusterParameterGroup": "default.neptune1.4",
+            "DBSubnetGroup": "neptune-lab-subnets",
+            "Status": "available",
+            "EarliestRestorableTime": "2026-10-08T22:03:19.087000+00:00",
+            "Endpoint": "neptune-lab.cluster-c89ks24s0uu6.us-east-1.neptune.amazonaws.com",
+            "ReaderEndpoint": "neptune-lab.cluster-ro-c89ks24s0uu6.us-east-1.neptune.amazonaws.com",
+            "MultiAZ": false,
+            "Engine": "neptune",
+            "EngineVersion": "1.4.8.0",
+            "LatestRestorableTime": "2026-10-08T22:03:19.087000+00:00",
+            "Port": 8182,
+            "MasterUsername": "admin",
+            "PreferredBackupWindow": "06:45-07:15",
+            "PreferredMaintenanceWindow": "thu:10:26-thu:10:56",
+            "ReadReplicaIdentifiers": [],
+            "DBClusterMembers": [
+                {
+                    "DBInstanceIdentifier": "neptune-lab-writer",
+                    "IsClusterWriter": true,
+                    "DBClusterParameterGroupStatus": "in-sync",
+                    "PromotionTier": 1
+                }
+            ],
+            "VpcSecurityGroups": [
+                {
+                    "VpcSecurityGroupId": "sg-0c377f3036ff3c50a",
+                    "Status": "active"
+                }
+            ],
+            "HostedZoneId": "ZUFXD4SLT2LS7",
+            "StorageEncrypted": true,
+            "KmsKeyId": "arn:aws:kms:us-east-1:204309303095:key/50eb836c-d803-4bee-94ac-e23c8485ea36",
+            "DbClusterResourceId": "cluster-S43WQSSHMW5P52JOT2J4DZLTQM",
+            "DBClusterArn": "arn:aws:rds:us-east-1:204309303095:cluster:neptune-lab",
+            "AssociatedRoles": [],
+            "IAMDatabaseAuthenticationEnabled": true,
+            "ClusterCreateTime": "2026-10-08T22:02:54.486000+00:00",
+            "CopyTagsToSnapshot": false,
+            "DeletionProtection": false,
+            "CrossAccountClone": false,
+            "NetworkType": "IPV4"
+        }
+    ]
+}

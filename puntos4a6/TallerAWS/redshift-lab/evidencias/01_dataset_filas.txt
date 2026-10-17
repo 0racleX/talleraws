@@ -1,0 +1,12 @@
+   61 datos/clientes.csv
+  601 datos/pedidos.csv
+  662 total
+==> datos/clientes.csv <==
+cliente_id,nombre,ciudad,pais,fecha_registro
+1,Luis Gomez,Ciudad de Mexico,Mexico,2023-10-09
+2,Carlos Rios,Bogota,Colombia,2023-04-15
+
+==> datos/pedidos.csv <==
+pedido_id,cliente_id,fecha_pedido,producto,categoria,cantidad,precio_unitario
+1,13,2025-10-02,Silla,Muebles,4,150
+2,28,2025-04-04,Auriculares,Electronica,3,60

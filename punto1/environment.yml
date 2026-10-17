@@ -1,0 +1,6 @@
+name: taller-aws
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - boto3

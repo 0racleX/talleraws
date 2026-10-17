@@ -1,0 +1,28 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+crash.log
+*.tfvars
+!terraform.tfvars.example
+tfplan
+*.tfplan
+
+# Estado de los scripts (solo IDs, pero no hace falta publicarlo)
+boto3_state.json
+cli_state.env
+
+# Credenciales
+.env
+*.pem
+*.key
+.aws/
+credentials
+**/credentials*
+
+# Python
+__pycache__/
+.venv/
+*.pyc

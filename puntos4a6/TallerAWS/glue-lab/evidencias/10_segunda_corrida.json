@@ -1,0 +1,7 @@
+{
+    "Status": "SUCCEEDED",
+    "LogGroup": "/aws-glue/crawlers",
+    "LogStream": "ventas-crawler",
+    "MessagePrefix": "1aa2fef8-5235-42b8-803f-ce20a441d317",
+    "StartTime": "2026-10-08T00:16:31-05:00"
+}

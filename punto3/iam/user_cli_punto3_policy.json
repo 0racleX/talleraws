@@ -1,0 +1,43 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DocumentDbClusterLifecycle",
+      "Effect": "Allow",
+      "Action": [
+        "rds:CreateDBCluster", "rds:DeleteDBCluster", "rds:ModifyDBCluster", "rds:DescribeDBClusters",
+        "rds:CreateDBInstance", "rds:DeleteDBInstance", "rds:ModifyDBInstance", "rds:DescribeDBInstances",
+        "rds:CreateDBSubnetGroup", "rds:DeleteDBSubnetGroup", "rds:DescribeDBSubnetGroups",
+        "rds:DescribeDBClusterSnapshots", "rds:DescribeDBClusterParameterGroups",
+        "rds:DescribeDBEngineVersions", "rds:DescribeOrderableDBInstanceOptions",
+        "rds:AddTagsToResource", "rds:ListTagsForResource", "rds:RemoveTagsFromResource"
+      ],
+      "Resource": "*",
+      "Condition": { "StringEquals": { "aws:RequestedRegion": "us-east-2" } }
+    },
+    {
+      "Sid": "ManagedClusterSecret",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:CreateSecret", "secretsmanager:TagResource", "secretsmanager:GetSecretValue",
+        "secretsmanager:DescribeSecret", "secretsmanager:DeleteSecret", "secretsmanager:UpdateSecret",
+        "secretsmanager:PutSecretValue", "secretsmanager:RotateSecret",
+        "secretsmanager:GetResourcePolicy", "secretsmanager:ListSecretVersionIds"
+      ],
+      "Resource": "arn:aws:secretsmanager:us-east-2:*:secret:rds!cluster-*"
+    },
+    {
+      "Sid": "ListSecrets",
+      "Effect": "Allow",
+      "Action": "secretsmanager:ListSecrets",
+      "Resource": "*"
+    },
+    {
+      "Sid": "SshKeyPairForTunnelHost",
+      "Effect": "Allow",
+      "Action": ["ec2:CreateKeyPair", "ec2:DeleteKeyPair", "ec2:DescribeKeyPairs"],
+      "Resource": "*",
+      "Condition": { "StringEquals": { "aws:RequestedRegion": "us-east-2" } }
+    }
+  ]
+}

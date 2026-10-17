@@ -1,0 +1,73 @@
+{
+    "workgroup": {
+        "baseCapacity": 4,
+        "configParameters": [
+            {
+                "parameterKey": "auto_mv",
+                "parameterValue": "true"
+            },
+            {
+                "parameterKey": "datestyle",
+                "parameterValue": "ISO, MDY"
+            },
+            {
+                "parameterKey": "enable_case_sensitive_identifier",
+                "parameterValue": "false"
+            },
+            {
+                "parameterKey": "enable_user_activity_logging",
+                "parameterValue": "true"
+            },
+            {
+                "parameterKey": "query_group",
+                "parameterValue": "default"
+            },
+            {
+                "parameterKey": "require_ssl",
+                "parameterValue": "true"
+            },
+            {
+                "parameterKey": "search_path",
+                "parameterValue": "$user, public"
+            },
+            {
+                "parameterKey": "use_fips_ssl",
+                "parameterValue": "false"
+            },
+            {
+                "parameterKey": "max_query_execution_time",
+                "parameterValue": "14400"
+            }
+        ],
+        "creationDate": "2026-10-10T03:32:29.651000+00:00",
+        "endpoint": {
+            "address": "taller-wg.204309303095.us-east-1.redshift-serverless.amazonaws.com",
+            "port": 5439
+        },
+        "enhancedVpcRouting": false,
+        "extraComputeForAutomaticOptimization": false,
+        "ipAddressType": "ipv4",
+        "maxCapacity": 8,
+        "namespaceName": "taller-ns",
+        "pricePerformanceTarget": {
+            "status": "DISABLED"
+        },
+        "publiclyAccessible": false,
+        "securityGroupIds": [
+            "sg-07866feaa5d0551db"
+        ],
+        "status": "CREATING",
+        "subnetIds": [
+            "subnet-01d9bd1c3422e15df",
+            "subnet-088f16172ddf8d0f0",
+            "subnet-0cdd7c4c7fa8757a6",
+            "subnet-0e6e6866e5ff94b32",
+            "subnet-0e2c93f0c0546d14e",
+            "subnet-0d4e954878f408f4c"
+        ],
+        "trackName": "current",
+        "workgroupArn": "arn:aws:redshift-serverless:us-east-1:204309303095:workgroup/59dda667-fa6b-4f3f-adfd-b101a980b57d",
+        "workgroupId": "59dda667-fa6b-4f3f-adfd-b101a980b57d",
+        "workgroupName": "taller-wg"
+    }
+}

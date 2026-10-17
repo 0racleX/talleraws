@@ -1,0 +1,7 @@
+  25 datos/mes=2026-01/ventas_2026-01.csv
+  13 datos_nuevos/mes=2026-02/ventas_2026-02.csv
+  38 total
+venta_id,fecha_venta,ciudad,codigo_postal,producto,categoria,cantidad,precio_unitario,cliente_vip
+1,2026-01-13,Cali,760001,Telefono,Electronica,1,499.5,true
+2,2026-01-12,Cartagena,130001,Portatil,Electronica,5,899.9,true
+3,2026-01-02,Cartagena,130001,Telefono,Electronica,1,499.5,false

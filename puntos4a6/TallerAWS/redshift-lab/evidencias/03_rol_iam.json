@@ -1,0 +1,24 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "RedshiftLabS3Read",
+        "RoleId": "AROAS7EOIR43QH4L32GZI",
+        "Arn": "arn:aws:iam::204309303095:role/RedshiftLabS3Read",
+        "CreateDate": "2026-10-10T03:27:36+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": [
+                            "redshift.amazonaws.com",
+                            "redshift-serverless.amazonaws.com"
+                        ]
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        }
+    }
+}

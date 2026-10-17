@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "venta_id",
+        "Type": "bigint"
+    },
+    {
+        "Name": "fecha_venta",
+        "Type": "date"
+    },
+    {
+        "Name": "ciudad",
+        "Type": "string"
+    },
+    {
+        "Name": "codigo_postal",
+        "Type": "string"
+    },
+    {
+        "Name": "producto",
+        "Type": "string"
+    },
+    {
+        "Name": "categoria",
+        "Type": "string"
+    },
+    {
+        "Name": "cantidad",
+        "Type": "int"
+    },
+    {
+        "Name": "precio_unitario",
+        "Type": "decimal(10,2)"
+    },
+    {
+        "Name": "cliente_vip",
+        "Type": "boolean"
+    }
+]

@@ -1,0 +1,65 @@
+{
+    "Columnas": [
+        {
+            "Name": "venta_id",
+            "Type": "bigint"
+        },
+        {
+            "Name": "fecha_venta",
+            "Type": "string"
+        },
+        {
+            "Name": "ciudad",
+            "Type": "string"
+        },
+        {
+            "Name": "codigo_postal",
+            "Type": "bigint"
+        },
+        {
+            "Name": "producto",
+            "Type": "string"
+        },
+        {
+            "Name": "categoria",
+            "Type": "string"
+        },
+        {
+            "Name": "cantidad",
+            "Type": "bigint"
+        },
+        {
+            "Name": "precio_unitario",
+            "Type": "double"
+        },
+        {
+            "Name": "cliente_vip",
+            "Type": "boolean"
+        }
+    ],
+    "Particiones": [
+        {
+            "Name": "mes",
+            "Type": "string"
+        }
+    ],
+    "Serde": "org.apache.hadoop.hive.serde2.lazy.LazySimpleSerDe",
+    "Propiedades": {
+        "skip.header.line.count": "1",
+        "sizeKey": "1600",
+        "objectCount": "1",
+        "UPDATED_BY_CRAWLER": "ventas-crawler",
+        "recordCount": "22",
+        "CrawlerSchemaSerializerVersion": "1.0",
+        "averageRecordSize": "72",
+        "partition_filtering.enabled": "true",
+        "compressionType": "none",
+        "CrawlerSchemaDeserializerVersion": "1.0",
+        "classification": "csv",
+        "columnsOrdered": "true",
+        "delimiter": ",",
+        "areColumnsQuoted": "false",
+        "CRAWL_RUN_ID": "ee11b4de-595f-4e58-a3e5-b8e64b4bcee3",
+        "typeOfData": "file"
+    }
+}

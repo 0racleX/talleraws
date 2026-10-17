@@ -1,0 +1,23 @@
+{
+    "Role": {
+        "Path": "/",
+        "RoleName": "GlueCrawlerLabRole",
+        "RoleId": "AROAS7EOIR437ZT5OWLWW",
+        "Arn": "arn:aws:iam::204309303095:role/GlueCrawlerLabRole",
+        "CreateDate": "2026-10-08T04:57:24+00:00",
+        "AssumeRolePolicyDocument": {
+            "Version": "2012-10-17",
+            "Statement": [
+                {
+                    "Effect": "Allow",
+                    "Principal": {
+                        "Service": "glue.amazonaws.com"
+                    },
+                    "Action": "sts:AssumeRole"
+                }
+            ]
+        },
+        "MaxSessionDuration": 3600,
+        "RoleLastUsed": {}
+    }
+}

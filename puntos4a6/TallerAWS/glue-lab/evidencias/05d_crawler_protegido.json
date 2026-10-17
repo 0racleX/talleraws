@@ -1,0 +1,9 @@
+[
+    {
+        "UpdateBehavior": "LOG",
+        "DeleteBehavior": "LOG"
+    },
+    {
+        "RecrawlBehavior": "CRAWL_NEW_FOLDERS_ONLY"
+    }
+]

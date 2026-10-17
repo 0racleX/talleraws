@@ -1,0 +1,20 @@
+[OK] DDL: crear tabla manual ventas_manual      id=8dc29530-74d5-45e1-b462-92e57ebc57bb  escaneado=0 bytes  467 ms
+[OK] DDL: registrar particiones (MSCK REPAIR)   id=b00c34a5-addb-4940-9fb4-138d2c669e1d  escaneado=0 bytes  3040 ms
+[OK] Comparacion: conteo por tabla              id=859fe139-ac7d-456c-804b-04b7c3dd65a5  escaneado=4922 bytes  3699 ms
+
+=== Comparacion: conteo por tabla ===
+  tabla            | filas
+  -----------------+------
+  ventas_manual    | 36   
+  ventas (crawler) | 36   
+  (2 filas)
+
+[OK] Manual: ventas por mes                     id=edfa46f8-83f7-4032-a115-dae5884c62ba  escaneado=2461 bytes  678 ms
+
+=== Manual: ventas por mes ===
+  mes     | ventas
+  --------+-------
+  2026-01 | 24    
+  2026-02 | 12    
+  (2 filas)
+

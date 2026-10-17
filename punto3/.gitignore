@@ -1,0 +1,18 @@
+# Estado de los scripts (IDs de recursos; no hace falta publicarlo)
+scripts/docdb_state.env
+
+# Llaves y credenciales
+*.pem
+*.key
+.env
+.aws/
+credentials
+**/credentials*
+
+# El paquete de CA es publico, pero se descarga con scripts/get_ca_bundle.sh
+certs/
+
+# Python
+__pycache__/
+.venv/
+*.pyc

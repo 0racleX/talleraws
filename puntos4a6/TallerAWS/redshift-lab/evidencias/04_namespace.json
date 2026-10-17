@@ -1,0 +1,18 @@
+{
+    "namespace": {
+        "adminPasswordSecretArn": "arn:aws:secretsmanager:us-east-1:204309303095:secret:redshift!taller-ns-adminuser-IdPHad",
+        "adminUsername": "adminuser",
+        "creationDate": "2026-10-10T03:32:27.900000+00:00",
+        "dbName": "dev",
+        "iamRoles": [
+            "IamRole(applyStatus=null, iamRoleArn=arn:aws:iam::204309303095:role/RedshiftLabS3Read)"
+        ],
+        "kmsKeyId": "AWS_OWNED_KMS_KEY",
+        "lakehouseRegistrationStatus": "NOT_REGISTERED",
+        "logExports": [],
+        "namespaceArn": "arn:aws:redshift-serverless:us-east-1:204309303095:namespace/4c92269c-2016-441e-ac36-a177774d214a",
+        "namespaceId": "4c92269c-2016-441e-ac36-a177774d214a",
+        "namespaceName": "taller-ns",
+        "status": "AVAILABLE"
+    }
+}

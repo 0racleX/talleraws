@@ -1,0 +1,35 @@
+{
+    "DBSubnetGroup": {
+        "DBSubnetGroupName": "neptune-lab-subnets",
+        "DBSubnetGroupDescription": "Subnets lab Neptune",
+        "VpcId": "vpc-0573b1f819aaa2844",
+        "SubnetGroupStatus": "Complete",
+        "Subnets": [
+            {
+                "SubnetIdentifier": "subnet-008219cbd6736127d",
+                "SubnetAvailabilityZone": {
+                    "Name": "us-east-1c"
+                },
+                "SubnetStatus": "Active"
+            },
+            {
+                "SubnetIdentifier": "subnet-01c2bffedad1636d4",
+                "SubnetAvailabilityZone": {
+                    "Name": "us-east-1a"
+                },
+                "SubnetStatus": "Active"
+            },
+            {
+                "SubnetIdentifier": "subnet-0ab2a94747781c5bc",
+                "SubnetAvailabilityZone": {
+                    "Name": "us-east-1b"
+                },
+                "SubnetStatus": "Active"
+            }
+        ],
+        "DBSubnetGroupArn": "arn:aws:rds:us-east-1:204309303095:subgrp:neptune-lab-subnets",
+        "SupportedNetworkTypes": [
+            "IPV4"
+        ]
+    }
+}

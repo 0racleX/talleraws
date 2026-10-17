@@ -1,0 +1,13 @@
+venta_id,fecha_venta,ciudad,codigo_postal,producto,categoria,cantidad,precio_unitario,cliente_vip
+25,2026-02-13,Bucaramanga,680001,Telefono,Electronica,4,499.5,false
+26,2026-02-15,Medellin,050001,Telefono,Electronica,4,499.5,false
+27,2026-02-28,Bogota,110111,Silla,Muebles,5,149.0,false
+28,2026-02-12,Bucaramanga,680001,Silla,Muebles,4,149.0,true
+29,2026-02-06,Bogota,110111,Portatil,Electronica,2,899.9,true
+30,2026-02-01,Bucaramanga,680001,Telefono,Electronica,4,499.5,true
+31,2026-02-01,Cali,760001,Audifonos,Electronica,2,59.9,false
+32,2026-02-20,Cartagena,130001,Audifonos,Electronica,5,59.9,false
+33,2026-02-28,Bogota,110111,Cuaderno,Papeleria,5,4.5,true
+34,2026-02-26,Barranquilla,080001,Cuaderno,Papeleria,5,4.5,false
+35,2026-02-13,Barranquilla,080001,Silla,Muebles,1,149.0,false
+36,2026-02-02,Bucaramanga,680001,Silla,Muebles,2,149.0,true

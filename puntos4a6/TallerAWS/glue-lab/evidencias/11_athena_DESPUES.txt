@@ -1,0 +1,25 @@
+[OK] Q3 AGRUPACION POR PARTICION: ventas por mes id=e9f0ca1c-0663-4eaf-a58d-ba4be8a27e41  escaneado=2461 bytes  820 ms
+
+=== Q3 AGRUPACION POR PARTICION: ventas por mes ===
+  mes     | ventas | ingresos
+  --------+--------+---------
+  2026-01 | 24     | 19222.55
+  2026-02 | 12     | 10046.10
+  (2 filas)
+
+[OK] Q5a CON filtro de particion (mes = 2026-01) id=c39ecc69-f823-465c-8fdd-7694dad5035f  escaneado=1600 bytes  497 ms
+
+=== Q5a CON filtro de particion (mes = 2026-01) ===
+  filas
+  -----
+  24   
+  (1 filas)
+
+[OK] Q5b SIN filtro de particion                id=eb18b834-3bf2-4994-ac46-f9c6e51b984e  escaneado=2461 bytes  624 ms
+
+=== Q5b SIN filtro de particion ===
+  filas
+  -----
+  36   
+  (1 filas)
+

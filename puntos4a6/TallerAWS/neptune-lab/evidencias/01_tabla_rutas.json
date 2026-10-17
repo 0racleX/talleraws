@@ -1,0 +1,59 @@
+{
+    "RouteTables": [
+        {
+            "Associations": [
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0d30bf1e93ddb60ae",
+                    "RouteTableId": "rtb-0159bd9c5397ce9a0",
+                    "SubnetId": "subnet-0ab2a94747781c5bc",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                },
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0ee47067738cd5541",
+                    "RouteTableId": "rtb-0159bd9c5397ce9a0",
+                    "SubnetId": "subnet-01c2bffedad1636d4",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                },
+                {
+                    "Main": false,
+                    "RouteTableAssociationId": "rtbassoc-0aedb22b509684a3b",
+                    "RouteTableId": "rtb-0159bd9c5397ce9a0",
+                    "SubnetId": "subnet-008219cbd6736127d",
+                    "AssociationState": {
+                        "State": "associated"
+                    }
+                }
+            ],
+            "PropagatingVgws": [],
+            "RouteTableId": "rtb-0159bd9c5397ce9a0",
+            "Routes": [
+                {
+                    "DestinationCidrBlock": "10.0.0.0/16",
+                    "GatewayId": "local",
+                    "Origin": "CreateRouteTable",
+                    "State": "active"
+                },
+                {
+                    "DestinationCidrBlock": "0.0.0.0/0",
+                    "GatewayId": "igw-0dfc73f8c761eadf9",
+                    "Origin": "CreateRoute",
+                    "State": "active"
+                }
+            ],
+            "Tags": [
+                {
+                    "Key": "Name",
+                    "Value": "neptune-lab-rt"
+                }
+            ],
+            "VpcId": "vpc-0573b1f819aaa2844",
+            "OwnerId": "204309303095"
+        }
+    ]
+}

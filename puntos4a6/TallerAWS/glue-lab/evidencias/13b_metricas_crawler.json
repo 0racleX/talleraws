@@ -1,0 +1,14 @@
+{
+    "CrawlerMetricsList": [
+        {
+            "CrawlerName": "ventas-crawler",
+            "TimeLeftSeconds": 0.0,
+            "StillEstimating": false,
+            "LastRuntimeSeconds": 38.101,
+            "MedianRuntimeSeconds": 37.9165,
+            "TablesCreated": 0,
+            "TablesUpdated": 0,
+            "TablesDeleted": 0
+        }
+    ]
+}
